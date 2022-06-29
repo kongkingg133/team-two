@@ -1,4 +1,4 @@
-package 병성진.Monster;
+package Monster;
 
 public class Monster{
 
@@ -8,13 +8,6 @@ public class Monster{
     public int amor;
 
 
-    //평범한 슬라임일 때
-    public Monster(){
-        this.name = "슬라임";
-        this.hp = 10;
-        this.mp = 0;
-        this.amor = 0;
-    }
 
     //몬스터 랜덤
     public Monster(String name_Ra){
@@ -31,6 +24,7 @@ public class Monster{
 
 
     }
+    
     //몬스터 상태창 
     public void showInfo(){
         System.out.println("_______" + this.name + "_______");
@@ -50,9 +44,6 @@ public class Monster{
         return 10;
     }
 
-    public void aa(){
-        
-    }
 
     
 
