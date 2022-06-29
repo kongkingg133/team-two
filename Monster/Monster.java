@@ -1,5 +1,7 @@
 package Monster;
 
+import java.util.*;
+
 public class Monster{
 
     public String name;
@@ -13,7 +15,6 @@ public class Monster{
     public Monster(String name_Ra){
         this.name = name_Ra;
     }
-
 
     //그냥 일반 몬스터
     public Monster(String name, int hp, int mp,int amor){
@@ -48,14 +49,14 @@ public class Monster{
     public void die() {
         if (hp <= 0) {
             hp = 0;
-            System.out.println(this.Name + "이/가 죽었습니다.");
+            System.out.println(this.name + "이/가 죽었습니다.");
         } else {
-            System.out.println(this.Name + "이/가 살아있습니다.");
+            System.out.println(this.name + "이/가 살아있습니다.");
         }
     }
 
     // 몬스터 수치 랜덤 생성
-    void create() {
+    public void create() {
         String[] Monster_color = new String[4];
 
         Monster_color[0] = "흰색 " + name;
@@ -65,7 +66,7 @@ public class Monster{
 
         Random cr_ran = new Random();
         int cr_rand = (int) (Math.random() * Monster_color.length - 1);
-        this.Name = Monster_color[cr_rand];
+        this.name = Monster_color[cr_rand];
         this.hp = (int) (Math.random() * 50) + 1;
         this.mp = (int) (Math.random() * 50) + 1;
         this.amor = (int) (Math.random() * 10) + 1;
@@ -73,7 +74,14 @@ public class Monster{
         Monster(this.name, this.hp, this.mp, this.amor);
 
     }
-
+    // 몬스터 실험 확인 하는 장소
+        public static void main(String[] arg){
+            Monster m = new Monster();
+            m.create();
+            m.showInfo();
+            m.Monster("짱쌤");
+            m.showInfo();
+        }
     
 
 }
