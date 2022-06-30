@@ -43,5 +43,21 @@ public class dogM extends Monster{
 
         return intValue;
     }
+
+
+    @Override
+    public void create() {
+        ArrayList<String> name_D = new ArrayList<>();
+        name_D.add("노란 개");
+        name_D.add("빨간 개");
+        name_D.add("파랑 개");
+        name_D.add("초록 개");
+        name_D.add("검은 개");
+
+        int index_D = (int)(Math.random() * (name_D.size()-1));
+
+
+    }
+
     
 }

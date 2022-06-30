@@ -1,5 +1,7 @@
 package Monster;
 
+import java.util.ArrayList;
+
 public class slimeM extends Monster {
 
     public slimeM(String name, int hp, int mp, int hit, int amor) {
@@ -42,5 +44,16 @@ public class slimeM extends Monster {
         }
 
         return intValue;
+    }
+
+    public void create(){
+        ArrayList<String> name_S = new ArrayList<>();
+        name_S.add("노란 슬라임");
+        name_S.add("빨간 슬라임");
+        name_S.add("파랑 슬라임");
+        name_S.add("초록 슬라임");
+        name_S.add("검은 슬라임");
+        int index_S = (int)(Math.random() * (name_S.size()-1));
+
     }
 }

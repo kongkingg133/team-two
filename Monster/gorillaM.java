@@ -1,5 +1,8 @@
 package Monster;
 
+import java.util.ArrayList;
+
+
 public class gorillaM extends Monster {
 
     public gorillaM(String name, int hp, int mp, int hit, int amor) {
@@ -41,5 +44,19 @@ public class gorillaM extends Monster {
 
         return intValue;
     }
+
+    @Override
+    public void create(){
+ 
+        ArrayList<String> name_G = new ArrayList<>();
+        name_G.add("노란 고릴라");
+        name_G.add("빨간 고릴라");
+        name_G.add("파랑 고릴라");
+        name_G.add("초록 고릴라");
+        name_G.add("검은 고릴라");
+        int index_G = (int)(Math.random() * (name_G.size()-1));
+
+    }
+    
 
 }

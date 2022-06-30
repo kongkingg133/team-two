@@ -1,5 +1,9 @@
 package Monster;
 
+import java.util.ArrayList;
+
+import java.util.ArrayList;
+
 public class birdM extends Monster{
 
     public birdM(String name, int hp, int mp, int hit, int amor){
@@ -43,6 +47,18 @@ public class birdM extends Monster{
         }
 
         return intValue;
+    }
+
+    @Override
+    public void create(){
+        ArrayList<String> name_B = new ArrayList<>();
+        name_B.add("노란 새");
+        name_B.add("빨간 새");
+        name_B.add("파랑 새");
+        name_B.add("초록 새");
+        name_B.add("검은 새");
+        int index_B = (int)(Math.random() * (name_B.size()-1));
+
     }
     
     

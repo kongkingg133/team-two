@@ -41,4 +41,17 @@ public class tigerM extends Monster {
         return intValue;
     }
 
+    @Override
+    public void create(){
+        ArrayList<String> name_T = new ArrayList<>();
+        name_T.add("노란 호랑이");
+        name_T.add("빨간 호랑이");
+        name_T.add("파랑 호랑이");
+        name_T.add("초록 호랑이");
+        name_T.add("검은 호랑이");
+        int index_T = (int)(Math.random() * (name_T.size()-1));
+
+    }
+
+
 }
