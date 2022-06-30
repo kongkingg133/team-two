@@ -1,5 +1,7 @@
 package Monster;
 
+import java.util.ArrayList;
+
 public class dogM extends Monster{
 
     public dogM(String name, int hp, int mp, int hit, int amor){

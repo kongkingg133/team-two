@@ -15,7 +15,7 @@ public class LongSword extends item{
 
     }
 
-       @Override
+    @Override
     public int hit() {
         double r = Math.random();
         int dmg = (int) (r * 20) + 1;
