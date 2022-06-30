@@ -6,14 +6,18 @@ public class item_F extends item{
     public int dmgs;
     public String classT;
 
-    public item_F(int no, String name, int dmgs, String classT) {
+    public item_F(int no, String classT, String name, int dmgs) {
         this.no = no;
+        this.classT = classT;
         this.name = name;
         this.dmgs = dmgs;
-        this.classT = classT;
 
     }
 
+    public void add(LongSword longSword) {
+    }
+
+    
 
 
 
