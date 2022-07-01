@@ -1,5 +1,7 @@
 package Monster;
 
+import java.util.ArrayList;
+
 public class tigerM extends Monster {
     public tigerM(String name, int hp, int mp, int hit, int amor) {
         super(name, hp, mp, amor);

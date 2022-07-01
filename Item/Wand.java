@@ -2,12 +2,14 @@ package Item;
 
 public class Wand extends item{
     Wand(){
+        this.no = 1;
         this.classT = "mage";
         this.name = "Wand";
         this.dmgs = 50;
     }
     @Override
     public void showItemInfo() {
+        System.out.println("무기 Number : " + this.no);
         System.out.println("무기 타입 : " + this.classT);
         System.out.println("이름 : " + this.name);
         System.out.println("공격력 : " + this.dmgs);
@@ -25,6 +27,11 @@ public class Wand extends item{
             dmg = 0;
         }
         return dmg;
+    }
+
+    @Override
+    public void itemList(){
+
     }
 
     
